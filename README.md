@@ -5,12 +5,12 @@
 
 <a name="module_walk-back"></a>
 ## walk-back
-Walks back up the directory until the specified path is found.
+Walk up the directory tree until the specified path is found.
 
 <a name="exp_module_walk-back--walkBack"></a>
 ### walkBack(startAt, lookingFor) ⇒ <code>string</code> ⏏
 **Kind**: Exported function  
-**Returns**: <code>string</code> - - the full, absolute url to the found path  
+**Returns**: <code>string</code> - absolute url to the found path  
 
 | Param | Type | Description |
 | --- | --- | --- |
