@@ -1,0 +1,23 @@
+{
+  "name": "walk-back",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "0.0.0",
+  "description": "walk-back",
+  "repository": "https://github.com/75lb/walk-back.git",
+  "license": "MIT",
+  "main": "./lib/walk-back.js",
+  "bin": {
+    "walk-back": "bin/cli.js"
+  },
+  "keywords": [ "walk", "up", "back", "filesystem", "fs", "find", "file" ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
+  },
+  "devDependencies": {
+    "tape": "^4.2.0"
+  }
+}
