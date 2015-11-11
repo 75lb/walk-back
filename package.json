@@ -6,9 +6,6 @@
   "repository": "https://github.com/75lb/walk-back.git",
   "license": "MIT",
   "main": "./lib/walk-back.js",
-  "bin": {
-    "walk-back": "bin/cli.js"
-  },
   "keywords": [
     "walk",
     "up",
