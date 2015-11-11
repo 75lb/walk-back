@@ -26,8 +26,9 @@ null
 ```
 <a name="exp_module_walk-back--walkBack"></a>
 ### walkBack(startAt, lookingFor) ⇒ <code>string</code> ⏏
+Returns an absolute file path (if found) else `null`.
+
 **Kind**: Exported function  
-**Returns**: <code>string</code> - absolute url to the found path  
 
 | Param | Type | Description |
 | --- | --- | --- |
