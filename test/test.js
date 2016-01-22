@@ -28,3 +28,10 @@ test('relative path', function (t) {
   var filename = walkBack('.', 'test/fixture/subdir/file.txt')
   t.ok(filename && filename.search('walk-back/test/fixture/subdir/file.txt') > 0)
 })
+
+test('relative path 2', function (t) {
+  t.plan(1)
+
+  var filename = walkBack('./test/fixture/subdir', 'file.txt')
+  t.ok(filename && filename.search('walk-back/test/fixture/subdir/file.txt') > 0)
+})

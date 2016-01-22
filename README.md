@@ -21,6 +21,9 @@ Walk up the directory tree until the specified path is found.
 > walkBack(process.cwd(), '.bash_profile')
 '/Users/lloyd/.bash_profile'
 
+> walkBack('.', '.bash_profile')
+'/Users/lloyd/.bash_profile'
+
 > walkBack(process.cwd(), 'non-existent.file')
 null
 ```
