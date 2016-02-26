@@ -8,6 +8,10 @@
 ## walk-back
 Walk up the directory tree until the specified path is found.
 
+**Example**  
+```js
+const walkBack = require('walk-back')
+```
 <a name="exp_module_walk-back--walkBack"></a>
 ### walkBack(startAt, lookingFor) ⇒ <code>string</code> ⏏
 Returns an absolute file path (if found) else `null`.
@@ -21,8 +25,6 @@ Returns an absolute file path (if found) else `null`.
 
 **Example**  
 ```js
-> walkBack = require('walk-back')
-
 > walkBack(process.cwd(), 'package.json')
 '/Users/lloyd/Documents/75lb/walk-back/package.json'
 
