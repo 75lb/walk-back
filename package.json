@@ -13,7 +13,8 @@
     "filesystem",
     "fs",
     "find",
-    "file"
+    "file",
+    "system"
   ],
   "engines": {
     "node": ">=0.10.0"
@@ -24,6 +25,6 @@
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^1.3.3",
-    "tape": "^4.2.0"
+    "tape": "^4.4.0"
   }
 }
