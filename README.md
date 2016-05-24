@@ -27,21 +27,19 @@ Returns an absolute file path (if found) else `null`.
 
 **Example**  
 ```js
-> startDir = '/Users/lloyd/Documents/75lb/walk-back'
-
-> walkBack(startDir, 'package.json')
+> walkBack('/Users/lloyd/Documents/75lb/walk-back', 'package.json')
 '/Users/lloyd/Documents/75lb/walk-back/package.json'
 
-> walkBack(startDir, '75lb')
+> walkBack('/Users/lloyd/Documents/75lb/walk-back', '75lb')
 '/Users/lloyd/Documents/75lb'
 
-> walkBack(startDir, '.bash_profile')
+> walkBack('/Users/lloyd/Documents/75lb/walk-back', '.bash_profile')
 '/Users/lloyd/.bash_profile'
 
 > walkBack('.', '.bash_profile')
 '/Users/lloyd/.bash_profile'
 
-> walkBack(startDir, 'non-existent.file')
+> walkBack('/Users/lloyd/Documents/75lb/walk-back', 'non-existent.file')
 null
 ```
 
