@@ -5,6 +5,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 <a name="module_walk-back"></a>
+
 ## walk-back
 Walk up the directory tree until the specified path is found.
 
@@ -13,6 +14,7 @@ Walk up the directory tree until the specified path is found.
 const walkBack = require('walk-back')
 ```
 <a name="exp_module_walk-back--walkBack"></a>
+
 ### walkBack(startAt, lookingFor) ⇒ <code>string</code> ⏏
 Returns an absolute file path (if found) else `null`.
 
@@ -25,19 +27,21 @@ Returns an absolute file path (if found) else `null`.
 
 **Example**  
 ```js
-> walkBack(process.cwd(), 'package.json')
+> startDir = '/Users/lloyd/Documents/75lb/walk-back'
+
+> walkBack(startDir, 'package.json')
 '/Users/lloyd/Documents/75lb/walk-back/package.json'
 
-> walkBack(process.cwd(), '75lb')
+> walkBack(startDir, '75lb')
 '/Users/lloyd/Documents/75lb'
 
-> walkBack(process.cwd(), '.bash_profile')
+> walkBack(startDir, '.bash_profile')
 '/Users/lloyd/.bash_profile'
 
 > walkBack('.', '.bash_profile')
 '/Users/lloyd/.bash_profile'
 
-> walkBack(process.cwd(), 'non-existent.file')
+> walkBack(startDir, 'non-existent.file')
 null
 ```
 
