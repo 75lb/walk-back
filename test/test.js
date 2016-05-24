@@ -35,3 +35,10 @@ test('relative path 2', function (t) {
   var filename = walkBack('./test/fixture/subdir', 'file.txt')
   t.ok(filename && filename.search('walk-back/test/fixture/subdir/file.txt') > 0)
 })
+
+test('startPath doesn\'t exist', function (t) {
+  t.throws(function () {
+    walkBack('slfnavnkln', 'file.txt')    
+  })
+  t.end()
+})
