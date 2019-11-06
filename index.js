@@ -1,7 +1,3 @@
-'use strict'
-const path = require('path')
-const fs = require('fs')
-
 /**
  * Walk up the directory tree until the specified path is found.
  *
@@ -9,7 +5,6 @@ const fs = require('fs')
  * @example
  * const walkBack = require('walk-back')
  */
-module.exports = walkBack
 
 /**
  * Returns an absolute file path (if found) else `null`.
@@ -35,6 +30,8 @@ module.exports = walkBack
  * null
  */
 function walkBack (startAt, lookingFor) {
+  const path = require('path')
+  const fs = require('fs')
   startAt = path.resolve(startAt)
   if (fs.existsSync(startAt) && fs.statSync(startAt).isDirectory()) {
     const dirs = path.resolve(startAt).split(path.sep)
@@ -53,3 +50,5 @@ function walkBack (startAt, lookingFor) {
     throw new Error('startAt path must be an existing directory: ' + startAt)
   }
 }
+
+module.exports = walkBack
