@@ -17,7 +17,7 @@
     "system"
   ],
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=14.0.0"
   },
   "scripts": {
     "test": "test-runner test/test.js",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^6.0.1",
-    "test-runner": "^0.7.7"
+    "test-runner": "^0.8.13"
   },
   "files": [
     "index.js"
