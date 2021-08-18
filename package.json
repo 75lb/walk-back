@@ -3,8 +3,9 @@
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "5.0.0",
   "description": "Walk up the directory tree until the specified path is found.",
-  "repository": "https://github.com/75lb/walk-back.git",
+  "repository": "https://github.com/75lb/walk-back",
   "license": "MIT",
+  "exports": "./index.js",
   "keywords": [
     "walk",
     "up",
@@ -17,15 +18,15 @@
     "system"
   ],
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=12.17"
   },
   "scripts": {
     "test": "test-runner test/test.js",
     "docs": "jsdoc2md -t README.hbs index.js > README.md"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^6.0.1",
-    "test-runner": "^0.8.13"
+    "jsdoc-to-markdown": "^7.0.1",
+    "test-runner": "^0.9.8"
   },
   "files": [
     "index.js"

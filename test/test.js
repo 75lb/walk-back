@@ -1,5 +1,5 @@
 const Tom = require('test-runner').Tom
-const walkBack = require('../')
+const walkBack = require('walk-back')
 const a = require('assert').strict
 
 const tom = module.exports = new Tom()
