@@ -1,9 +1,12 @@
+import path from 'path'
+import fs from 'fs'
+
 /**
  * Walk up the directory tree until the specified path is found.
  *
  * @module walk-back
  * @example
- * const walkBack = require('walk-back')
+ * import walkBack from 'walk-back'
  */
 
 /**
@@ -30,8 +33,6 @@
  * null
  */
 function walkBack (startAt, lookingFor) {
-  const path = require('path')
-  const fs = require('fs')
   startAt = path.resolve(startAt)
   if (fs.existsSync(startAt) && fs.statSync(startAt).isDirectory()) {
     const dirs = path.resolve(startAt).split(path.sep)
@@ -51,4 +52,4 @@ function walkBack (startAt, lookingFor) {
   }
 }
 
-module.exports = walkBack
+export default walkBack

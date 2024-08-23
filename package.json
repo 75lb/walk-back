@@ -5,6 +5,7 @@
   "description": "Walk up the directory tree until the specified path is found.",
   "repository": "https://github.com/75lb/walk-back",
   "license": "MIT",
+  "type": "module",
   "exports": "./index.js",
   "keywords": [
     "walk",
@@ -25,10 +26,13 @@
     "docs": "jsdoc2md -t README.hbs index.js > README.md"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^7.0.1",
-    "test-runner": "^0.9.8"
+    "jsdoc-to-markdown": "^8.0.3",
+    "test-runner": "^0.12.0-0"
   },
   "files": [
     "index.js"
-  ]
+  ],
+  "dependencies": {
+    "current-module-paths": "^1.1.1"
+  }
 }
