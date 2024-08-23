@@ -26,6 +26,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: npm run test:ci
-      # env:
-      #   FORCE_COLOR: 3
+    - run: npm test
