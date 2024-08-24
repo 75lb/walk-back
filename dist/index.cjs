@@ -4,7 +4,7 @@ var path = require('path');
 var fs = require('fs');
 
 /**
- * Walk up the directory tree until the specified path is found.
+ * Walk up the directory tree until the specified path is found. For example, walk up through parent directories until a specified config file is found.
  *
  * @module walk-back
  * @example

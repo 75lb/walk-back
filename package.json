@@ -25,12 +25,11 @@
     "node": ">=12.17"
   },
   "scripts": {
-    "test": "test-runner test/test.js test/test.cjs",
-    "docs": "jsdoc2md -t README.hbs index.js > README.md"
+    "test": "75lb-nature test test/test.js test/test.cjs",
+    "docs": "75lb-nature jsdoc2md -t README.hbs index.js > README.md",
+    "dist": "75lb-nature cjs-build index.js"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^8.0.3",
-    "test-runner": "^0.12.0-1"
   },
   "files": [
     "index.js",
