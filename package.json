@@ -28,7 +28,8 @@
     "node": ">=12.17"
   },
   "scripts": {
-    "test": "75lb-nature test-runner test/test.js test/test.cjs",
+    "test": "npm run dist && npm run test:ci",
+    "test:ci": "75lb-nature test-runner test/test.js test/test.cjs",
     "docs": "75lb-nature jsdoc2md -t README.hbs index.js > README.md",
     "dist": "75lb-nature cjs-build index.js"
   },

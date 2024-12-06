@@ -1,6 +1,6 @@
 const a = require('assert').strict
 const walkBack = require('walk-back')
-const path = require('node:path')
+const path = require('path')
 
 const test = new Map()
 
