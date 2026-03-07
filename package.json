@@ -22,7 +22,8 @@
     "find",
     "file",
     "search",
-    "system"
+    "system",
+    "config"
   ],
   "engines": {
     "node": ">=12.17"
