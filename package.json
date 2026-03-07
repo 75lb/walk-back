@@ -1,7 +1,7 @@
 {
   "name": "walk-back",
   "author": "Lloyd Brookes <opensource@75lb.com>",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "description": "Walk up the directory tree until the specified path is found.",
   "repository": {
     "type": "git",
