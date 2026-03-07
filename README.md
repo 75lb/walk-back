@@ -7,7 +7,7 @@
 <a name="module_walk-back"></a>
 
 ## walk-back
-Walk up the directory tree until the specified path is found. For example, walk up through parent directories until a specified config file is found.
+Walk up the directory tree until the specified path is found. For example, starting from the current directory, you might want to walk up the directory tree until a specified config file is found.
 
 **Example**  
 ```js
